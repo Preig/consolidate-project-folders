@@ -1,0 +1,4 @@
+interface:
+  display_name: "Consolidate Project Folders"
+  short_description: "Merge folders while preserving apps, data, and sources"
+  default_prompt: "Use $consolidate-project-folders to consolidate these folders into one verified collection, preserving working bundles, data, sources, and distinct versions."

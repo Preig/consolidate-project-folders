@@ -1,0 +1,31 @@
+# Local environments, credentials, and runtime state
+.env
+.env.*
+*.pem
+*.key
+*.p12
+*.pfx
+*credentials*
+*secrets*
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+node_modules/
+.codex/
+.idea/
+.vscode/
+# Private user data and generated audit/test workspaces
+*.db
+*.sqlite*
+*.db-wal
+*.db-shm
+*.log
+tests/test-tmp/
+tests/.pytest_cache/
+work/
+private/
+browser-profile/
+audit-runs/
+Thumbs.db
+.DS_Store

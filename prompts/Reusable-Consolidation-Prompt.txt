@@ -1,0 +1,34 @@
+Consolidate these folders/project versions into one verified collection.
+
+INPUT FOLDERS (absolute paths, one per line):
+INPUT_FOLDER_1
+INPUT_FOLDER_2
+
+DESTINATION: DESTINATION_FOLDER
+PRIMARY VERSION / ENTRY POINT: use my stated choice; otherwise recommend from evidence
+PROTECTED REFERENCES (read-only): NONE_OR_LIST
+DELETE VERIFIED REDUNDANT COPIES: YES_OR_NO
+MISSING-SOURCE SEARCH SCOPE: INPUT_FOLDERS_ONLY_OR_ALLOWED_LOCAL_ROOTS
+REBUILD APPS: NO_OR_YES_IN_ISOLATION
+
+Execute the authorized work, not just a plan. Preserve earlier decisions and do not repeat approvals already given. Ask only about consequential missing choices or genuine permission blockers; continue independent work. If deletion above is YES, I authorize redundant-copy removal within these input/destination folders after the checks below. This does not authorize deleting protected references, discarding unique work or replacing current apps/data.
+
+1. Inventory every selected root, including destination, hidden/source/build/config files and empty directories. Record root/relative path, size, SHA-256, stability/read status, links, exclusions and errors. Keep staging/baselines outside input trees. Detect nesting/junctions to avoid double counting or recursively copying new outputs into themselves.
+
+2. Identify complete working bundles: websites/assets, apps/data/config/runtime, source/build trees, documents and releases. Exact duplicates require size plus SHA-256, never names/dates/appearance. Preserve same-hash dependencies at paths required by separate bundles. Identical binaries do not make databases or secrets interchangeable.
+
+3. Evaluate versions by unique content, functionality, provenance, sources and tests. Keep my primary bundles and unique data/sources. Archive distinct earlier versions intact; preserve ambiguous variants. Explain retention criteria and do not mix incompatible revisions.
+
+4. Create a file map/action log, copy or merge, then verify. Before each authorized removal revalidate the current source and a retained keeper. ZIP keepers require exact uncompressed member size/hash and integrity, not just a member listing. Never delete the last verified copy or use a keeper slated for deletion. Record intentional bundle-local duplicates. Remove retired roots only after accounting for contents and confirming they are empty. Preserve protected references; report cloud sync status separately from local verification.
+
+5. Fix affected HTML/CSS/JavaScript resources and section anchors, document hyperlinks, shortcuts, launcher working directories, config/build paths and START-HERE references. Distinguish preexisting failures from migration regressions. Repair unambiguous preexisting project links too; report unresolved targets. Preserve text, notes, media and unrelated content during path-only edits.
+
+6. If important sources/build files are missing, search the allowed scope and consolidate unique recoveries with provenance. Establish which revision matches the app; retain different revisions separately. Omit caches, environments, generated binaries and private runtime data from source bundles. Do not infer source equivalence from filenames or EXE hash mismatch alone.
+
+7. Test at an appropriate level: archive integrity, current paths/anchors, data consistency and meaningful app/browser workflows on copies or fresh synthetic workspaces. If rebuilds above are YES, use copied sources/isolated environments and deliver separate candidates; preserve current EXEs/data. Record commands, dependency/tool versions, warnings, fixes, output hashes and failed attempts. Use no paid APIs, real messages/payments, live connectors or production migrations without separate authorization.
+
+8. Finish with a fresh inventory. Account for every original as retained loose, retained as an exact verified archive member, preserved rollback material for an edit, or removed under a verified redundancy/explicit retirement decision. Unreadable/unstable/missing content is unresolved. Distinguish static validation, runtime tests, rebuilt candidates and deployment; claim only what was checked.
+
+Deliver current START-HERE routing, full folder tree, size/SHA-256 inventory, original-to-final file map/action log, retention/duplicate criteria and exceptions, archive/restore map, verification/coverage limits and audit evidence. Account for the audit files themselves. Summarize completed changes, actual savings and open issues with clickable deliverables. Keep dates/counts specific to this run.
+
+If installed, apply $consolidate-project-folders.

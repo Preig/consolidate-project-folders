@@ -1,0 +1,31 @@
+{
+  "status": "INSTALLED_AND_VERIFIED",
+  "target": "~/.codex/skills/consolidate-project-folders",
+  "files": [
+    {
+      "file": "SKILL.md",
+      "sha256": "1A43EFD7EC952A42041A398D3F6C1DBC6D36147C3CE009172E17A862C9C53787"
+    },
+    {
+      "file": "agents\\openai.yaml",
+      "sha256": "C304A5ED6937D0465EF03E1AB9E61E7E20E9AB755D8EE973DFD01C0062D698A6"
+    },
+    {
+      "file": "assets\\consolidation-prompt.txt",
+      "sha256": "42BE7A44ED26667FC6A27B23DDE24ECAD32BAA5B88F8F021E4D1B82667805564"
+    },
+    {
+      "file": "references\\advanced-verification.md",
+      "sha256": "47ACC52070839094DA64828A57126F635A74E09E9628CE5E339AB53F1DBA0E30"
+    },
+    {
+      "file": "references\\audit-contract.md",
+      "sha256": "01B39AA0A254FB846331F1C4B3D45AD87D99F06DDFB753F196A2E628C0DCFB9B"
+    },
+    {
+      "file": "scripts\\consolidation_audit.py",
+      "sha256": "ED9642DC1E91354B3033CF16CF4356EE029C2986F0338AAF83389CF974C41D32"
+    }
+  ],
+  "formatValidation": "PASS"
+}

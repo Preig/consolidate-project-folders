@@ -1,0 +1,74 @@
+SKILL PACKAGE VALIDATION - 2026-10-21
+
+Skill: consolidate-project-folders
+Skill Creator quick_validate.py: PASS (PyYAML 6.0.3 in isolated validation folder).
+UI metadata and local references: PASS.
+Python helper syntax: PASS; helper uses standard library only.
+Read-only helper contract: 10 tests PASS.
+ZIP CRC and all six packaged files compared with staging: PASS.
+Standalone prompt compared with packaged asset: PASS.
+
+The ten tests cover exact hashes, hidden files/empty directories, tree output,
+report overwrite refusal, recursive report output refusal, overlapping roots,
+renamed content, name collisions, missing unique content, exact ZIP members,
+different-byte archive members, CRC corruption, inspection limits, and archive drift.
+
+Limitations:
+- Junction traversal fixture could not be created: sandbox returned Access is denied.
+  This branch was not independently exercised; no traversal PASS is claimed.
+- Initial test harness used a sandbox TEMP folder that denied nested creation.
+  Fixtures were moved to the permitted task workspace before the passing run.
+- This skill is a workflow, not an unattended delete program. The helper only audits.
+- Future projects still require their own preservation, link, data and runtime checks.
+
+Package SHA-256: 835be2b8bdf62f719b5630aab312ce88122afae5c31ade87d86f2a997f3904b3
+Prompt SHA-256: 42be7a44ed26667fc6a27b23dde24ecad32baa5b88f8f021e4d1b82667805564
+
+Skill file SHA-256 manifest:
+c304a5ed6937d0465ef03e1ab9e61e7e20e9ab755d8ee973dfd01c0062d698a6  agents/openai.yaml
+42be7a44ed26667fc6a27b23dde24ecad32baa5b88f8f021e4d1b82667805564  assets/consolidation-prompt.txt
+47acc52070839094da64828a57126f635a74e09e9628ce5e339ab53f1dba0e30  references/advanced-verification.md
+01b39aa0a254fb846331f1c4b3d45ad87d99f06ddfb753f196a2e628c0dcfb9b  references/audit-contract.md
+ed9642dc1e91354b3033cf16cf4356ee029c2986f0338aaf83389cf974c41d32  scripts/consolidation_audit.py
+1a43efd7ec952a42041a398d3f6c1dbc6d36147c3ce009172e17a862c9c53787  SKILL.md
+
+Helper test log:
+test_archive_limits_fail_without_extraction (__main__.AuditTests.test_archive_limits_fail_without_extraction) ... ok
+test_changed_archive_since_snapshot_fails (__main__.AuditTests.test_changed_archive_since_snapshot_fails) ... ok
+test_corrupt_archive_fails (__main__.AuditTests.test_corrupt_archive_fails) ... ok
+test_coverage_after_rename_and_same_name_collision (__main__.AuditTests.test_coverage_after_rename_and_same_name_collision) ... ok
+test_exact_zip_member_coverage (__main__.AuditTests.test_exact_zip_member_coverage) ... ok
+test_inventory_groups_hidden_empty_and_tree (__main__.AuditTests.test_inventory_groups_hidden_empty_and_tree) ... ok
+test_missing_unique_fails (__main__.AuditTests.test_missing_unique_fails) ... ok
+test_overlapping_roots_rejected (__main__.AuditTests.test_overlapping_roots_rejected) ... ok
+test_refuses_report_overwrite_and_recursive_output (__main__.AuditTests.test_refuses_report_overwrite_and_recursive_output) ... ok
+test_same_zip_member_name_different_bytes_fails (__main__.AuditTests.test_same_zip_member_name_different_bytes_fails) ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 8.373s
+
+OK
+
+
+Installation: PASS. All six installed files match the staged/package SHA-256 hashes.
+Installed location: ~/.codex/skills/consolidate-project-folders
+Installation evidence: installation.json
+
+Independent forward test: PASS on an isolated synthetic project.
+- Final baseline: 43 files, 21 unique byte contents. All accounted for; no missing contents.
+- Two working HTML apps; unique sources/data/configuration and name collisions retained.
+- Six historical files archived with verified member hashes.
+- Two redundant standalone copies removed; required bundle dependencies preserved.
+- Zero broken active links. Original routing bytes remain rollback material.
+- Headless Edge workflows passed: data/resources loaded; filtering returned expected results.
+- No runtime diagnostics. No material skill safety flaw or required correction found.
+- Initial .ps1 execution policy failure and loopback sandbox restriction were logged;
+  normal scoped commands/permissions completed the test without changing policy.
+- A test-harness JSON-key error was corrected; original failed evidence was retained.
+- Every Edge descendant could not independently be confirmed stopped: CIM access denied.
+- Filesystem ACL/alternate-stream fidelity and general build reproducibility were not tested.
+Details: forward-test.md
+
+No live project folders were consolidated or deleted during this skill-creation task.
+
+Public release: local identifiers removed; ZIP rebuilt from reviewed skill files.
